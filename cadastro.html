@@ -1,12 +1,132 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
+<html lang="pt-BR">
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+      content="Cadastre-se no Olho no Mar e participe de uma comunidade dedicada ao cuidado com os oceanos.">
+    <meta name="theme-color" content="#06131e">
     <title>Cadastro | Olho no Mar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;display=swap"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;display=swap"
+      rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&amp;icon_names=arrow_downward,arrow_forward,arrow_outward,info,location_on,photo_camera,waves&amp;display=block"
+      rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <!-- Página de cadastro. -->
-</body>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="principal.html" aria-label="Olho no Mar — página principal">
+          <span class="brand-mark material-symbols-outlined" aria-hidden="true">waves</span>
+          <span>Olho no Mar <span class="brand-caption">UM OLHAR QUE CUIDA</span></span>
+        </a>
+        <nav class="nav-links" aria-label="Navegação principal">
+          <a href="principal.html">Plataforma</a>
+          <a href="sobre.html">Sobre o projeto</a>
+          <a href="index.html">Entrar</a>
+          <a class="button" href="cadastro.html" aria-current="page">Criar conta</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="auth-shell container" id="conteudo">
+      <section class="auth-visual" aria-labelledby="comunidade-titulo">
+        <p class="eyebrow">Faça parte dessa corrente</p>
+        <h1 id="comunidade-titulo">Mais gente olhando. Mais vida no mar.</h1>
+        <p>
+          Um registro pode chamar atenção para um problema. Muitos olhares podem transformar a relação da comunidade
+          com o oceano.
+        </p>
+        <footer class="auth-visual-footer">
+          <span>Pequenas ações, novos horizontes.</span> <span>ODS 14 · Vida na Água</span>
+        </footer>
+      </section>
+
+      <section class="auth-panel" aria-labelledby="cadastro-titulo">
+        <p class="eyebrow">O próximo passo começa aqui</p>
+        <h2 id="cadastro-titulo">Junte-se ao Olho no Mar.</h2>
+        <p class="section-intro">Crie sua conta e participe do cuidado com o oceano.</p>
+        <form class="form-stack" action="index.html" method="get">
+          <div class="field">
+            <label for="cadastro-nome">Nome completo</label>
+            <input id="cadastro-nome" name="nome" type="text" autocomplete="name"
+              minlength="3" maxlength="100" placeholder="Como podemos chamar você?" required>
+          </div>
+          <div class="field">
+            <label for="cadastro-email">E-mail</label>
+            <input id="cadastro-email" name="email" type="email" autocomplete="email"
+              placeholder="voce@exemplo.com" required>
+          </div>
+          <div class="form-grid">
+            <div class="field">
+              <label for="cadastro-cidade">Cidade</label>
+              <input id="cadastro-cidade" name="cidade" type="text" autocomplete="address-level2"
+                maxlength="100" placeholder="Sua cidade" required>
+            </div>
+            <div class="field">
+              <label for="cadastro-estado">Estado</label>
+              <select id="cadastro-estado" name="estado" autocomplete="address-level1" required>
+                <option value="" disabled selected>Selecione a UF</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="cadastro-senha">Senha</label>
+            <input id="cadastro-senha" type="password" autocomplete="new-password" minlength="8"
+              aria-describedby="cadastro-senha-ajuda" required>
+            <small id="cadastro-senha-ajuda">Use pelo menos 8 caracteres.</small>
+          </div>
+          <button class="button button-primary" type="submit">
+            Cadastrar <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+          </button>
+        </form>
+        <p class="auth-switch">
+          Já conhece a plataforma? <a class="text-link" href="index.html">Ir para o login</a>
+        </p>
+      </section>
+    </main>
+
+    <footer class="simple-footer container">
+      <p>© 2026 Olho no Mar · UTFPR</p>
+      <a href="sobre.html#ods14">
+        Um projeto conectado à ODS 14
+        <span class="material-symbols-outlined" aria-hidden="true">arrow_outward</span>
+      </a>
+    </footer>
+  </body>
 </html>

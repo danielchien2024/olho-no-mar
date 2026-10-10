@@ -18,7 +18,7 @@
 | RF01 | O sistema deve disponibilizar um formulário de cadastro com pelo menos cinco campos. |
 | RF02 | O sistema deve disponibilizar um formulário de login com e-mail e senha. |
 | RF03 | O sistema deve permitir a navegação do cadastro para o login e do login para a página principal. |
-| RF04 | O sistema deve apresentar quatro ocorrências demonstrativas em cards contendo imagem, título, categoria, localização, data e descrição. |
+| RF04 | O sistema deve apresentar quatro ocorrências em cards contendo imagem, título, categoria, localização, data e descrição. |
 | RF05 | O sistema deve disponibilizar um formulário de registro de ocorrências com localização, categoria, data, descrição e fotografia. |
 | RF06 | O sistema deve disponibilizar uma página informativa sobre o projeto e a ODS 14. |
 | RF07 | O sistema deve disponibilizar um menu de navegação entre páginas e seções. |
@@ -36,4 +36,4 @@
 | RNF06 | O sistema deve estar disponível publicamente pelo GitHub Pages. |
 | RNF07 | O sistema deve utilizar textos alternativos nas imagens e rótulos associados aos campos dos formulários. |
 
-**Nota:** No Projeto 1, os formulários e as ocorrências serão demonstrativos, sem autenticação ou armazenamento de dados.
+**Escopo do Projeto 1:** HTML5 e CSS3, com navegação e validação nativa dos formulários, sem JavaScript.

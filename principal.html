@@ -1,12 +1,366 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
+<html lang="pt-BR">
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#06131e">
     <title>Início | Olho no Mar</title>
+    <meta name="description"
+      content="Um olhar coletivo para cuidar do oceano. Acompanhe e registre ocorrências de poluição marinha.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;display=swap"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;display=swap"
+      rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&amp;icon_names=arrow_downward,arrow_forward,arrow_outward,info,location_on,photo_camera,waves&amp;display=block"
+      rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <!-- Página principal. -->
-</body>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="principal.html" aria-label="Olho no Mar, página principal">
+          <span class="brand-mark material-symbols-outlined" aria-hidden="true">waves</span>
+          <span>Olho no Mar <span class="brand-caption">UM OLHAR QUE CUIDA</span></span>
+        </a>
+        <nav class="nav-links" aria-label="Navegação principal">
+          <a href="principal.html" aria-current="page">Plataforma</a>
+          <a href="sobre.html">Sobre o projeto</a>
+          <a href="index.html">Entrar</a>
+          <a class="button" href="cadastro.html">
+            Criar conta
+            <span class="material-symbols-outlined" aria-hidden="true">arrow_outward</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero container" aria-labelledby="hero-titulo">
+        <img class="hero-image" src="assets/images/oceano.jpg"
+          alt="Raios de luz atravessando a superfície e iluminando as águas profundas do oceano" width="1800"
+          height="2699" fetchpriority="high">
+        <header class="hero-content">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> PELO OCEANO. EM COMUNIDADE.</p>
+          <h1 id="hero-titulo">O mar é de todos. <br> O cuidado <em>também.</em></h1>
+          <p>
+            Um olhar atento pode fazer a diferença. Conectamos pessoas que querem observar, registrar e dar
+            visibilidade à poluição marinha.
+          </p>
+          <div class="button-row">
+            <a class="button button-primary" href="#registro">
+              Registrar ocorrência <span class="material-symbols-outlined" aria-hidden="true">arrow_outward</span>
+            </a>
+            <a class="button button-outline-light" href="#ocorrencias">
+              Explorar registros <span class="material-symbols-outlined" aria-hidden="true">arrow_downward</span>
+            </a>
+          </div>
+          <p class="hero-note">Pequenas atitudes. Um oceano de possibilidades.</p>
+        </header>
+        <a class="hero-ods" href="sobre.html#ods14">
+          <span class="hero-ods-number">14</span>
+          <span>VIDA NA ÁGUA <br> <small>Um projeto conectado à ODS 14</small></span>
+          <span class="material-symbols-outlined" aria-hidden="true">arrow_outward</span>
+        </a>
+        <span class="hero-coordinate" aria-hidden="true">UM FUTURO MAIS AZUL</span>
+      </section>
+
+      <section class="section container" id="ocorrencias" aria-labelledby="ocorrencias-titulo">
+        <header class="section-heading">
+          <div>
+            <p class="eyebrow">UM OLHAR SOBRE O LITORAL</p>
+            <h2 id="ocorrencias-titulo">O que a comunidade <em>observa.</em></h2>
+          </div>
+          <p>
+            Acompanhe as ocorrências recentes. <br> Todo registro começa com alguém que se importa.
+          </p>
+        </header>
+        <fieldset class="carousel">
+          <legend class="visually-hidden">Selecionar uma das quatro ocorrências</legend>
+          <!-- Radios nativos: Tab entra no grupo; as setas selecionam a ocorrência. -->
+          <input class="carousel-radio visually-hidden" type="radio" name="ocorrencia" id="ocorrencia-1"
+            checked>
+          <label for="ocorrencia-1"><span>01</span> Plásticos</label>
+          <article class="occurrence-card" aria-labelledby="titulo-1">
+            <figure class="occurrence-image">
+              <img src="assets/images/plastico-na-areia.jpg"
+                alt="Garrafa plástica descartada na areia de uma praia" width="1100" height="733"
+                loading="lazy">
+            </figure>
+            <div class="occurrence-content">
+              <div class="card-topline">
+                <span class="tag">Plásticos</span> <span class="card-count">01 / 04</span>
+              </div>
+              <p class="location">MATINHOS · PARANÁ</p>
+              <h3 id="titulo-1">Plástico na areia, <br> um alerta à beira-mar.</h3>
+              <p>
+                Garrafas e embalagens deixadas próximas à faixa de maré podem ser levadas pelas ondas.
+                O acúmulo de plástico ameaça os animais e compromete a qualidade da praia.
+              </p>
+              <dl class="occurrence-meta">
+                <dt>Localização</dt>
+                <dd>Praia de Caiobá, Matinhos – PR</dd>
+                <dt>Data da observação</dt>
+                <dd><time datetime="2026-10-08">08 de outubro de 2026</time></dd>
+              </dl>
+            </div>
+          </article>
+          <input class="carousel-radio visually-hidden" type="radio" name="ocorrencia" id="ocorrencia-2">
+          <label for="ocorrencia-2"><span>02</span> Resíduos</label>
+          <article class="occurrence-card" aria-labelledby="titulo-2">
+            <figure class="occurrence-image">
+              <img src="assets/images/residuos-na-praia.jpg"
+                alt="Acúmulo de garrafas, embalagens e outros resíduos na faixa de areia" width="1100"
+                height="733" loading="lazy">
+            </figure>
+            <div class="occurrence-content">
+              <div class="card-topline">
+                <span class="tag tag-sand">Resíduos sólidos</span> <span class="card-count">02 / 04</span>
+              </div>
+              <p class="location">PONTAL DO PARANÁ · PARANÁ</p>
+              <h3 id="titulo-2">O que fica na praia <br> pode chegar ao mar.</h3>
+              <p>
+                Resíduos acumulados junto à areia após um período de maré alta. Garrafas, embalagens e outros
+                materiais podem voltar à água com a próxima maré.
+              </p>
+              <dl class="occurrence-meta">
+                <dt>Localização</dt>
+                <dd>Praia de Ipanema, Pontal do Paraná – PR</dd>
+                <dt>Data da observação</dt>
+                <dd><time datetime="2026-10-07">07 de outubro de 2026</time></dd>
+              </dl>
+            </div>
+          </article>
+          <input class="carousel-radio visually-hidden" type="radio" name="ocorrencia" id="ocorrencia-3">
+          <label for="ocorrencia-3"><span>03</span> Redes de pesca</label>
+          <article class="occurrence-card" aria-labelledby="titulo-3">
+            <figure class="occurrence-image">
+              <img src="assets/images/rede-abandonada.jpg"
+                alt="Redes, cordas e boias de pesca abandonadas junto ao mar" width="1280" height="854"
+                loading="lazy">
+            </figure>
+            <div class="occurrence-content">
+              <div class="card-topline">
+                <span class="tag">Material de pesca</span> <span class="card-count">03 / 04</span>
+              </div>
+              <p class="location">GUARATUBA · PARANÁ</p>
+              <h3 id="titulo-3">Uma rede esquecida. <br> Um risco que continua.</h3>
+              <p>
+                Fragmentos de rede e cordas próximos à vegetação costeira podem prender animais.
+                Observar e descrever o material à distância ajuda a reconhecer o risco.
+              </p>
+              <dl class="occurrence-meta">
+                <dt>Localização</dt>
+                <dd>Praia de Brejatuba, Guaratuba – PR</dd>
+                <dt>Data da observação</dt>
+                <dd><time datetime="2026-10-06">06 de outubro de 2026</time></dd>
+              </dl>
+            </div>
+          </article>
+          <input class="carousel-radio visually-hidden" type="radio" name="ocorrencia" id="ocorrencia-4">
+          <label for="ocorrencia-4"><span>04</span> Água</label>
+          <article class="occurrence-card" aria-labelledby="titulo-4">
+            <figure class="occurrence-image">
+              <img src="assets/images/oleo-no-mar.jpg"
+                alt="Vista aérea de faixas de óleo na superfície azul do mar, próximas a uma embarcação"
+                width="1280" height="853" loading="lazy">
+            </figure>
+            <div class="occurrence-content">
+              <div class="card-topline">
+                <span class="tag tag-sand"> Substância não identificada </span> <span class="card-count">04 /
+                04</span>
+              </div>
+              <p class="location">PARANAGUÁ · PARANÁ</p>
+              <h3 id="titulo-4">Observar também é <br> cuidar da água.</h3>
+              <p>
+                Mancha com aparência oleosa perto da costa. O registro reúne características visíveis,
+                como cor e extensão; a identificação da substância depende de análise.
+              </p>
+              <dl class="occurrence-meta">
+                <dt>Localização</dt>
+                <dd>Ilha do Mel, Paranaguá – PR</dd>
+                <dt>Data da observação</dt>
+                <dd><time datetime="2026-10-05">05 de outubro de 2026</time></dd>
+              </dl>
+            </div>
+          </article>
+        </fieldset>
+      </section>
+
+      <section class="how-section section" aria-labelledby="como-funciona-titulo">
+        <div class="container">
+          <header class="section-heading">
+            <div>
+              <p class="eyebrow">DO SEU OLHAR PARA O COLETIVO</p>
+              <h2 id="como-funciona-titulo">Cuidar começa com <em>perceber.</em></h2>
+            </div>
+            <a class="text-link" href="sobre.html">
+              Por que isso importa
+              <span class="material-symbols-outlined" aria-hidden="true">arrow_outward</span>
+            </a>
+          </header>
+          <ol class="how-grid">
+            <li>
+              <span class="step-number">01</span>
+              <h3>Entender os padrões</h3>
+              <p>
+                Observações repetidas revelam onde os resíduos se acumulam e como sua presença varia ao longo do
+                tempo. Assim, um episódio isolado ganha contexto.
+              </p>
+            </li>
+            <li>
+              <span class="step-number">02</span>
+              <h3>Orientar o cuidado</h3>
+              <p>
+                Conhecer os tipos de resíduos e os locais mais afetados ajuda a direcionar ações de prevenção e
+                limpeza para onde elas são mais necessárias.
+              </p>
+            </li>
+            <li>
+              <span class="step-number">03</span>
+              <h3>Acompanhar as mudanças</h3>
+              <p>
+                Comparar registros feitos com critérios consistentes permite avaliar resultados e perceber se a
+                poluição diminui ou se novas ações são necessárias.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section container registration-grid" id="registro"
+        aria-labelledby="registro-titulo">
+        <div class="registration-intro">
+          <p class="eyebrow">SUA OBSERVAÇÃO IMPORTA</p>
+          <h2 id="registro-titulo">Viu algo? <br> Vamos <em>registrar.</em></h2>
+          <p>Compartilhe uma ocorrência de poluição marinha e ajude a ampliar o cuidado com o litoral.</p>
+          <aside class="note-card">
+            <span class="material-symbols-outlined" aria-hidden="true">info</span>
+            <h3>Um registro com contexto</h3>
+            <p>
+              Informe um ponto de referência e descreva apenas o que observou. Evite incluir rostos ou
+              informações pessoais na fotografia.
+            </p>
+          </aside>
+        </div>
+        <form class="form-stack registration-panel" action="principal.html#ocorrencias" method="get"
+          aria-describedby="registro-instrucao">
+          <h3>Nova ocorrência</h3>
+          <p class="form-note" id="registro-instrucao">Os campos marcados com * são obrigatórios.</p>
+          <div class="field">
+            <label class="label-with-icon" for="localizacao">
+              <span class="material-symbols-outlined" aria-hidden="true">location_on</span>
+              Localização *
+            </label>
+            <input id="localizacao" name="localizacao" type="text"
+              placeholder="Ex.: Praia de Caiobá, Matinhos – PR" required
+              minlength="5" maxlength="180" autocomplete="off">
+          </div>
+          <div class="form-grid">
+            <div class="field">
+              <label for="categoria">Categoria *</label>
+              <select id="categoria" name="categoria" required>
+                <option value="" disabled selected>Selecione uma categoria</option>
+                <option>Plásticos</option>
+                <option>Resíduos sólidos</option>
+                <option>Material de pesca</option>
+                <option>Substância não identificada</option>
+                <option>Outros</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="data">Data da observação *</label>
+              <input id="data" name="data" type="date" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="descricao">O que você observou? *</label>
+            <textarea id="descricao" name="descricao" rows="4"
+              placeholder="Descreva o tipo de resíduo, a quantidade aproximada e as condições do local…"
+              required minlength="15" maxlength="1200" aria-describedby="descricao-ajuda"></textarea>
+            <small id="descricao-ajuda">Escreva entre 15 e 1.200 caracteres.</small>
+          </div>
+          <div class="field upload-field">
+            <label class="label-with-icon" for="fotografia">
+              <span class="material-symbols-outlined" aria-hidden="true">photo_camera</span>
+              Fotografia
+              <span class="optional">(opcional)</span>
+            </label>
+            <input id="fotografia" name="fotografia" type="file" accept="image/jpeg,image/png,image/webp"
+              aria-describedby="foto-ajuda">
+            <small id="foto-ajuda">
+              Escolha uma imagem JPG, PNG ou WebP.
+            </small>
+          </div>
+          <button class="button button-primary" type="submit">
+            Registrar ocorrência <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+          </button>
+        </form>
+      </section>
+
+      <section class="container cta-band" aria-labelledby="cta-titulo">
+        <div>
+          <p class="eyebrow">VIDA NA ÁGUA, CUIDADO EM TERRA</p>
+          <h2 id="cta-titulo">O futuro do oceano <br> também passa por <em>você.</em></h2>
+        </div>
+        <a class="button button-primary" href="sobre.html#ods14">
+          Conheça a ODS 14 <span class="material-symbols-outlined" aria-hidden="true">arrow_outward</span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand" href="principal.html">
+            <span class="brand-mark material-symbols-outlined" aria-hidden="true">waves</span> <span>Olho no Mar</span>
+          </a>
+          <p>Um olhar coletivo. <br> Um oceano de possibilidades.</p>
+        </div>
+        <nav aria-label="Navegação do rodapé">
+          <h2>Explore</h2>
+          <ul class="footer-links">
+            <li><a href="#ocorrencias">Ocorrências</a></li>
+            <li><a href="#registro">Registrar ocorrência</a></li>
+            <li><a href="sobre.html">Sobre o projeto</a></li>
+            <li><a href="cadastro.html">Criar conta</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h2>Quem faz o projeto</h2>
+          <ul class="footer-links">
+            <li>
+              <a href="https://danielchien2024.github.io/cv-css/">
+                Daniel Chien Chen Wang <span class="material-symbols-outlined" aria-hidden="true">arrow_outward</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://gustavoyuya.github.io/">
+                Gustavo Yudi Yamada
+                <span class="material-symbols-outlined" aria-hidden="true">arrow_outward</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://pedro-067.github.io/meu-cv-utfpr/">
+                Pedro Paulo da Silva Oliveira
+                <span class="material-symbols-outlined" aria-hidden="true">arrow_outward</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© 2026 Olho no Mar · UTFPR · EC47C</p>
+        <a href="sobre.html#fontes">
+          Fontes e créditos
+          <span class="material-symbols-outlined" aria-hidden="true">arrow_outward</span>
+        </a>
+      </div>
+    </footer>
+  </body>
 </html>
